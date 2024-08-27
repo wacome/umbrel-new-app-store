@@ -7,7 +7,7 @@ services:
       APP_PORT: 19035
 
   chinese-subfinder:
-    image: allanpk716/chinesesubfinder:latest-lite@sha256:a96064ca26b7814dc575d272188e37bc32d1bb2bce2b02a94cdd1097ff52c231
+    image: allanpk716/chinesesubfinder:latest-lite@sha256:814f6baf1ed90e69e772be05147377a450c2a44e521577d3b6f62c30ad72e69b
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/media:/media
