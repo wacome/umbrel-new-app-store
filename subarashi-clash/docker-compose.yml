@@ -27,7 +27,10 @@ services:
     devices:
       - /dev/net/tun
     volumes:
-      - ${APP_DATA_DIR}/data/config/config.yaml:/config.yaml
+      - type: bind
+        source: ${APP_DATA_DIR}/data/config/config.yaml
+        target: /config.yaml
+        read_only: true
       - ${APP_DATA_DIR}/data/clash_dir:/clash_dir
     # 自定义dns 当clash作为本地上游dns时 clash启动时无法找到可用的dns
     dns:
