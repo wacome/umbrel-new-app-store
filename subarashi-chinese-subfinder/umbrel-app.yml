@@ -12,7 +12,7 @@ releaseNotes: >-
 developer: allanpk716
 website: https://github.com/ChineseSubFinder/ChineseSubFinder
 dependencies: []
-repo: https://github.com/ChineseSubFinder/ChineseSubFinder
+repo: https://github.com/wacome/umbrel-new-app-store
 support: https://github.com/ChineseSubFinder/ChineseSubFinder/discussions
 port: 19035
 gallery: 
