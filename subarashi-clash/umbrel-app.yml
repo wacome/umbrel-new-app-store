@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-clash
+category: Development
+name: Clash
+version: "1.0.0"
+icon: https://svgur.com/i/mvA.svg
+tagline: Clash
+description: >-
+ Clash is a powerful proxy software that can be used to bypass firewalls and censorship.
+releaseNotes: >-
+  1. for docker-compose
+developer: NavyD
+website: https://github.com/NavyD/docker-clash
+dependencies: []
+repo: https://github.com/NavyD/docker-clash
+support: https://github.com/NavyD/docker-clash/discussions
+port: 9090
+gallery: 
+  - "https://roov.org/wp-content/uploads/2020/07/2020-07-05_233220.png"
+  - "https://roov.org/wp-content/uploads/2020/07/2020-07-05_233220.png"
+  - "https://roov.org/wp-content/uploads/2020/07/2020-07-05_233220.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
