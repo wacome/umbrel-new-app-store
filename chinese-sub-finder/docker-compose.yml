@@ -1,8 +1,10 @@
 version: "3.7"
+
 services:
+
   app_proxy:
     environment:
-      APP_HOST: sparkles-chinese-subfinder_1
+      APP_HOST: chinese-sub-finder_subfinder_1
       APP_PORT: 19035
 
   server:
