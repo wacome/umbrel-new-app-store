@@ -3,10 +3,10 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: subarashi-chinese-subfinder_1
+      APP_HOST: subarashi-chinesesubfinder_1
       APP_PORT: 19035
 
-  chinese-subfinder:
+  chinesesubfinder:
     image: allanpk716/chinesesubfinder:latest-lite
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
