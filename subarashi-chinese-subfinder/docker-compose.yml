@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: subarashi-chinesesubfinder_1
-      APP_PORT: 19035
+      APP_PORT: 19039
 
   chinesesubfinder:
     image: allanpk716/chinesesubfinder:latest-lite
@@ -17,5 +17,5 @@ services:
       - UMASK=022
     restart: on-failure
     ports:
-      - 19035:19035
+      - 19039:19035
       - 19037:19037 
