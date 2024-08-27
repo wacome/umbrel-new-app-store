@@ -8,7 +8,6 @@ services:
 
   clash:
     image: navyd/clash:latest
-    network_mode: host
     restart: on-failure
     # [How do I break a string in YAML over multiple lines?](https://stackoverflow.com/a/21699210/8566831)
     command: >
@@ -17,7 +16,11 @@ services:
       -d /clash_dir
       -u nobody
       -vvv
-
+    ports:
+      - 7890:7890
+      - 7891:7891
+      - 7892:7892
+      - 9090:9090
     # 仅使用cap_add将无法代理本机docker
     # cap_add:
     # 使用clash-premium的docker镜像无法创建tun: https://github.com/Dreamacro/clash/issues/736
