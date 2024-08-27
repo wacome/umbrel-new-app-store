@@ -6,14 +6,14 @@ services:
       APP_HOST: chinese-subfinder_web_1
       APP_PORT: 19035
 
-  server:
+  web:
     image: allanpk716/chinesesubfinder:latest-lite@sha256:a96064ca26b7814dc575d272188e37bc32d1bb2bce2b02a94cdd1097ff52c231
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/media:/media
     environment:
-      - PUID=1000
-      - PGID=1000
+      PUID: 1000
+      PGID: 1000
     restart: on-failure
     ports:
       - 19035:19035
