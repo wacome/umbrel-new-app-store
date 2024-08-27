@@ -1,16 +1,17 @@
 manifestVersion: 1
-id: chinese-subfinder
+id: chinese-sub-finder
 category: Developer
 name: ChineseSubFinder
 version: "0.55.3"
-tagline: 中文字幕库下载
+icon: https://svgur.com/i/mvA.svg
+tagline: Chinese subtitle library download
 description: >-
-  本项目的初衷仅仅是想自动化搞定限定条件下 中文 字幕，在第三方的网站或者接口的下载。
+  The original intention of this project is merely to automate the download of Chinese subtitles under specified conditions from third-party websites or interfaces.
 releaseNotes: >-
-  1. 支持多语言字幕
+  1. Multi-language subtitles support.
 developer: allanpk716
 website: https://github.com/ChineseSubFinder/ChineseSubFinder
-dependencies:
+dependencies: []
 repo: https://github.com/ChineseSubFinder/ChineseSubFinder
 support: https://github.com/ChineseSubFinder/ChineseSubFinder/discussions
 port: 19035
