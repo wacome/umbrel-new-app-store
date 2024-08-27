@@ -10,15 +10,14 @@ services:
   server:
     image: allanpk716/chinesesubfinder:latest-lite@sha256:a96064ca26b7814dc575d272188e37bc32d1bb2bce2b02a94cdd1097ff52c231
     volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/media:/media
+      ${APP_DATA_DIR}/data/config:/config
+      ${UMBREL_ROOT}/data/storage/media:/media
     environment:
-      - PUID=1000
-      - PGID=1000
-      - PERMS=false
-      - TZ=Asia/Shanghai
-      - UMASK=022
+      PERMS=false
+      TZ=Asia/Shanghai
+      UMASK=022
     restart: always
+    user: "1000:1000"
     ports:
-      - 19035:19035
-      - 19037:19037 
+      19035:19035
+      19037:19037 
