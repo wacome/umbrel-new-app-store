@@ -4,15 +4,20 @@ services:
   app_proxy:
     environment:
       APP_HOST: subarashi-clash_server_1
-      APP_PORT: 9091
+      APP_PORT: 8082
 
   server:
-    image: toycon/clash:1.0.9
+    image: 80x86/clash:premium-2023.06.30
     restart: always
+    user: "1000:1000"
     ports:
-      - 7891:7891
+      - 7890:7890
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data/config/config.yaml
-        target: /home/runner/.config/clash/config.yaml
+        target: /etc/clash/config.yaml
+        read_only: true
+      - type: bind
+        source: ${APP_DATA_DIR}/data/config/Country.mmdb
+        target: /etc/clash/Country.mmdb
         read_only: true
