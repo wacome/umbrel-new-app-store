@@ -7,7 +7,7 @@ services:
       APP_PORT: 9091
 
   server:
-    image: toycon/clash:1.0.2
+    image: toycon/clash:1.0.4
     restart: always
     ports:
       - 7890:7890
