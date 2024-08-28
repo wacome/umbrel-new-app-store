@@ -7,34 +7,13 @@ services:
       APP_PORT: 9090
 
   clash:
-    image: toycon/clash:1.0.1
+    image: centralx/clash:1.18.0
     restart: on-failure
-    # [How do I break a string in YAML over multiple lines?](https://stackoverflow.com/a/21699210/8566831)
-    command: >
-      -f /config.yaml
-      -b clash
-      -d /clash_dir
-      -u nobody
-      -vvv
     ports:
       - 7890:7890
-      - 7891:7891
-      - 7892:7892
-    environment:
-      - CLASH_TUN_DEVICE=tun
-    cap_add:
-      - NET_ADMIN
-      - NET_RAW
-    privileged: true
-    devices:
-      - /dev/net/tun:/dev/net/tun
+      - 9090:80
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data/config/config.yaml
-        target: /config.yaml
+        target: /home/runner/.config/clash/config.yaml
         read_only: true
-      - ${APP_DATA_DIR}/data/clash_dir:/clash_dir
-    # 自定义dns 当clash作为本地上游dns时 clash启动时无法找到可用的dns
-    dns:
-      - 8.8.8.8
-      - 114.114.114.114
