@@ -4,14 +4,13 @@ services:
   app_proxy:
     environment:
       APP_HOST: subarashi-clash_1
-      APP_PORT: 9090
+      APP_PORT: 9090:80
 
   clash:
     image: centralx/clash:1.18.0
     restart: on-failure
     ports:
       - 7890:7890
-      - 9090:80
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data/config/config.yaml
