@@ -10,7 +10,7 @@ services:
     image: allanpk716/chinesesubfinder:latest-lite
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/media:/media
+      - ${UMBREL_ROOT}/data/storage/downloads/media:/media
     environment:
       - PUID=1000
       - PGID=1000
