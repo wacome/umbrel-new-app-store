@@ -15,7 +15,7 @@ services:
       - PUID=1000
       - PGID=1000
       - UMASK=022
-    restart: on-failure
+    restart: always
     ports:
       - 19039:19035
       - 19037:19037 

@@ -4,11 +4,11 @@ services:
   app_proxy:
     environment:
       APP_HOST: subarashi-clash_server_1
-      APP_PORT: 9090:80
+      APP_PORT: 9090
 
   server:
-    image: centralx/clash:1.18.0
-    restart: on-failure
+    image: toycon/clash:1.0.2
+    restart: always
     ports:
       - 7890:7890
     volumes:
