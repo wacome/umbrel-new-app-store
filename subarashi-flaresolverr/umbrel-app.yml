@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-flaresolverr
+category: Development
+name: Flaresolverr
+version: "1.0.0"
+icon: https://avatars.githubusercontent.com/u/75936191?s=400&v=4
+tagline: Clash
+description: >-
+  Flaresolverr is a proxy server that can be used to bypass Cloudflare's anti-bot protection.
+releaseNotes: >-
+  1. add web UI
+developer: NavyD
+website: https://github.com/FlareSolverr/FlareSolverr
+dependencies: []
+repo: https://github.com/FlareSolverr/FlareSolverr
+support: https://github.com/FlareSolverr/FlareSolverr/discussions
+port: 8192
+gallery: 
+  - "https://trash-guides.info/Prowlarr/images/add-proxy-flaresolverr.png"
+  - "https://trash-guides.info/Prowlarr/images/add-proxy-flaresolverr.png"
+  - "https://trash-guides.info/Prowlarr/images/add-proxy-flaresolverr.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store

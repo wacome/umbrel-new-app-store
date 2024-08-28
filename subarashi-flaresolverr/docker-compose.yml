@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-flaresolverr_server_1
+      APP_PORT: 8192
+
+  server:
+    image: toycon/flaresolverr:latest
+    restart: always
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - LOG_HTML=${LOG_HTML:-false}
+      - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+      - TZ=Asia/ShangHai
+    ports:
+      - "${PORT:-8191}:8191"
