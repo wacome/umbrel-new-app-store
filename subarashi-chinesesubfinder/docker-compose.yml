@@ -17,5 +17,5 @@ services:
       - UMASK=022
     restart: always
     ports:
-      - 19039:19035
+      - 19035:19035
       - 19037:19037 
