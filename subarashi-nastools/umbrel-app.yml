@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-nastools
+category: Development
+name: Nas tools
+version: "0.1.0"
+icon: https://th.bing.com/th/id/OIP.8Xg4Tg5XxE-ICprmP4pwGQAAAA?rs=1&pid=ImgDetMain
+tagline: Nas Tools
+description: >-
+  Nas Tools is a web application that can be used to manage NAS servers.
+releaseNotes: >-
+  1. for docker-compose
+developer: skymkmk
+website: https://github.com/hsuyelin/nas-tools
+dependencies: []
+repo: https://github.com/hsuyelin/nas-tools
+support: https://github.com/hsuyelin/nas-tools/discussions
+port: 3000
+gallery: 
+  - "https://miaotony.xyz/2023/08/08/Server_HomeLab_3_nastools/image-20221222061735837.png"
+  - "https://miaotony.xyz/2023/08/08/Server_HomeLab_3_nastools/image-20221222061735837.png"
+  - "https://miaotony.xyz/2023/08/08/Server_HomeLab_3_nastools/image-20221222061735837.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
