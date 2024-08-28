@@ -3,10 +3,10 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: subarashi-clash_1
+      APP_HOST: subarashi-clash_server_1
       APP_PORT: 9090:80
 
-  clash:
+  server:
     image: centralx/clash:1.18.0
     restart: on-failure
     ports:
