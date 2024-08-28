@@ -7,7 +7,7 @@ services:
       APP_PORT: 9090
 
   clash:
-    image: toycon/clash:1.0.0
+    image: toycon/clash:1.0.1
     restart: on-failure
     # [How do I break a string in YAML over multiple lines?](https://stackoverflow.com/a/21699210/8566831)
     command: >
@@ -25,7 +25,7 @@ services:
       - NET_RAW
     privileged: true
     devices:
-      - /dev/net/tun
+      - /dev/net/tun:/dev/net/tun
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data/config/config.yaml
