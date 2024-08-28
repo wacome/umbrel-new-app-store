@@ -14,7 +14,7 @@ website: https://github.com/NavyD/docker-clash
 dependencies: []
 repo: https://github.com/NavyD/docker-clash
 support: https://github.com/NavyD/docker-clash/discussions
-port: 9090
+port: 9091
 gallery: 
   - "https://roov.org/wp-content/uploads/2020/07/2020-07-05_233220.png"
   - "https://roov.org/wp-content/uploads/2020/07/2020-07-05_233220.png"
