@@ -7,10 +7,10 @@ services:
       APP_PORT: 9091
 
   server:
-    image: toycon/clash:1.0.6
+    image: toycon/clash:1.0.7
     restart: always
     ports:
-      - 7890:7890
+      - 7891:7891
     volumes:
       - type: bind
         source: ${APP_DATA_DIR}/data/config/config.yaml
