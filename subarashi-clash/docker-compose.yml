@@ -10,6 +10,9 @@ services:
     image: 80x86/clash:premium-2023.06.30
     restart: always
     user: "1000:1000"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
     ports:
       - 7890:7890
       - 7891:7891
