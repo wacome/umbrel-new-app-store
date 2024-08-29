@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-alist
+category: Development
+name: Alist
+version: "1.0.0"
+icon: https://th.bing.com/th/id/OIP.MeDRTpt92G3S-_kU9BZJEQHaHa?rs=1&pid=ImgDetMain
+tagline: Alist
+description: >-
+ Alist is a lightweight and open source file manager.
+releaseNotes: >-
+  1. add web UI
+developer: xhofe
+website: https://alist.nn.ci/zh/
+dependencies: []
+repo: https://github.com/alist-org/alist
+support: https://github.com/alist-org/alist/discussions
+port: 5244
+gallery: 
+  - "https://iweec.com/usr/uploads/2023/01/145681049.png"
+  - "https://iweec.com/usr/uploads/2023/01/145681049.png"
+  - "https://iweec.com/usr/uploads/2023/01/145681049.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store

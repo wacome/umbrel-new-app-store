@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-alist_server_1
+      APP_PORT: 5244
+
+  server:
+    image: xhofe/alist-aria2:latest
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=022
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/opt/alist/data
