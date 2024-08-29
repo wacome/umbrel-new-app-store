@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-baidunetdisk
+category: Development
+name: Baidunetdisk
+version: "1.0.0"
+icon: https://img.onlinedown.net/download/202306/135636-6482bf14bfc1b.jpg
+tagline: baidunetdisk
+description: >-
+ Baidunetdisk is a cloud disk downloader
+releaseNotes: >-
+  1. add web UI
+developer: NavyD
+website: https://github.com/gshang2017/docker
+dependencies: []
+repo: https://github.com/gshang2017/docker
+support: https://github.com/gshang2017/docker/discussions
+port: 5800
+gallery: 
+  - "https://am.zdmimg.com/202009/15/5f60bd58a69634097.png_orig.jpg"
+  - "https://am.zdmimg.com/202009/15/5f60bd58a69634097.png_orig.jpg"
+  - "https://am.zdmimg.com/202009/15/5f60bd58a69634097.png_orig.jpg"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
