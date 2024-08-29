@@ -16,3 +16,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/opt/alist/data
       - ${UMBREL_ROOT}/data/storage/downloads:/opt/alist/storage
+    ports:
+      - 5959:5959
+      - 5960:5960
