@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: subarashi-alinetdisk_server_1
-      APP_PORT: 6081
+      APP_PORT: 5801
 
   server:
     image: toycon/aliyun:latest
@@ -12,6 +12,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - NGINX_LISTENING_PORT=5801
       - DISABLE_ALIST=true
       - ELECTRON_NO_ATTACH_CONSOLE=true
       - ELECTRON_RUN_AS_NODE=1
@@ -21,3 +22,4 @@ services:
       - /var/run/dbus:/var/run/dbus
     ports:
       - 5901:5901
+      - 6081:6081
