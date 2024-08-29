@@ -20,7 +20,6 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
       - /var/run/dbus:/var/run/dbus
-    command: ["/bin/bash", "-c", "cd /opt/xbyyunpan && ./xbyyunpan"]
     ports:
       - 5901:5901
       - 6081:6081
