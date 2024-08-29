@@ -12,7 +12,6 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - NGINX_LISTENING_PORT=5801
       - DISABLE_ALIST=true
       - ELECTRON_NO_ATTACH_CONSOLE=true
       - ELECTRON_RUN_AS_NODE=1
