@@ -12,8 +12,12 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - DISABLE_ALIST=true
+      - ELECTRON_NO_ATTACH_CONSOLE=true
+      - ELECTRON_RUN_AS_NODE=1
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
-      - /var/run/dbus:/var/run/dbus  # 映射主机的 DBus socket
-      - /run/dbus:/run/dbus 
+      - /var/run/dbus:/var/run/dbus
+    ports:
+      - 5901:5901
