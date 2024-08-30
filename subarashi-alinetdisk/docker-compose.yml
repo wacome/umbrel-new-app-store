@@ -16,3 +16,5 @@ services:
       - ${UMBREL_ROOT}/data/storage/downloads:/config/download
       - /dev/shm/xbyyunpan:/dev/shm
       - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
+    ports:
+      - 5344:5344
