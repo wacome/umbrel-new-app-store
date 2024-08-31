@@ -14,7 +14,7 @@ website: https://github.com/gshang2017/docker
 dependencies: []
 repo: https://hexo.io
 support: https://github.com/appotry/docker-hexo/discussions
-port: 5801
+port: 4000
 gallery: 
   - "https://img2018.cnblogs.com/blog/1191638/202002/1191638-20200218165323685-96977184.png"
   - "https://img2018.cnblogs.com/blog/1191638/202002/1191638-20200218165323685-96977184.png"
