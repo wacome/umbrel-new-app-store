@@ -7,15 +7,10 @@ services:
       APP_PORT: 5801
 
   server:
-    image: toycon/aliyun:latest
+    image: toycon/aliyunpan:latest
     restart: always
-    cap_add:
-      - SYS_ADMIN
-    user: root
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/config/download
       - /dev/shm/xbyyunpan:/dev/shm
       - /run/dbus/system_bus_socket:/run/dbus/system_bus_socket
-    ports:
-      - 5344:5344
