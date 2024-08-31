@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-hexo
+category: Development
+name: Hexo
+version: "1.0.0"
+icon: https://www.svgrepo.com/download/376326/hexo.svg
+tagline: Hexo
+description: >-
+  Hexo is a fast, simple and powerful blog framework.
+releaseNotes: >-
+  1. add web UI
+developer: appotry
+website: https://github.com/gshang2017/docker
+dependencies: []
+repo: https://hexo.io
+support: https://github.com/appotry/docker-hexo/discussions
+port: 5801
+gallery: 
+  - "https://img2018.cnblogs.com/blog/1191638/202002/1191638-20200218165323685-96977184.png"
+  - "https://img2018.cnblogs.com/blog/1191638/202002/1191638-20200218165323685-96977184.png"
+  - "https://img2018.cnblogs.com/blog/1191638/202002/1191638-20200218165323685-96977184.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store

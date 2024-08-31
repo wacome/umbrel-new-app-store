@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-hexo_server_1
+      APP_PORT: 4000
+
+  server:
+    image: bloodstar/hexo:latest
+    restart: always
+    volumes:
+      - ${APP_DATA_DIR}/hexo/blog:/app
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - GIT_USER="wacome"
+      - GIT_EMAIL="twk1319332366@gmail.com"
