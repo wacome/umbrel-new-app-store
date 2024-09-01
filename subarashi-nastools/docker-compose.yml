@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: subarashi-nastools_server_1
       APP_PORT: 3000
+      PROXY_AUTH_ADD: "true"
 
   server:
     image: hsuyelin/nas-tools:latest
