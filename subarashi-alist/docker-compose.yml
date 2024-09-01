@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: subarashi-alist_server_1
       APP_PORT: 5244
-      PROXY_AUTH_ADD: "true"
+      PROXY_AUTH_ADD: "false"
 
   server:
     image: xhofe/alist-aria2:latest
