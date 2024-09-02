@@ -10,3 +10,5 @@ services:
   server:
     image: toycon/404:latest
     restart: always
+    ports:
+      - 7999:80
