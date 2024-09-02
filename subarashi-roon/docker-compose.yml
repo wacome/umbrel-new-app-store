@@ -13,9 +13,12 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+      - TZ=Asia/Shanghai
     volumes:
+      - ${APP_DATA_DIR}/data/:/var/roon/RoonServer
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
-      - type: bind
-        source: ${APP_DATA_DIR}/data/RoonServer
-        target: /var/roon/RoonServer
-    network_mode: host
+    ports:
+      - 55000:55000/tcp
+      - 9330-9339:9330-9339/tcp
+      - 30000-30009:30000-30009/tcp
+      - 9003:9003/udp
