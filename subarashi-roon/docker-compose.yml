@@ -8,13 +8,12 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: suwey/streamer:latest
+    image: ddg5366/roonserver:latest
     restart: always
     environment:
       - PUID=1000
       - PGID=1000
     volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-      - ${APP_DATA_DIR}/data/playlist:/playlist
+      - ${APP_DATA_DIR}/data/RoonServer:/var/roon/RoonServer
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
     network_mode: host
