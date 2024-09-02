@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-roon
+category: Development
+name: Roon
+version: "1.0.0"
+icon: https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/26/e0/29/26e0299c-a8c3-8ee3-f209-c45e33ef9214/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x1200bb.png
+tagline: Roon
+description: >-
+ Roon is a music player
+releaseNotes: >-
+  1. add web UI
+developer: suwey
+website: http://www.erji.net/forum.php?mod=viewthread&tid=2247160
+dependencies: []
+repo: https://github.com/alist-org/alist
+support: https://github.com/alist-org/alist/discussions
+port: 8099
+gallery: 
+  - "https://am.zdmimg.com/202308/18/64df5f4c49bec2215.png_orig.jpg"
+  - "https://am.zdmimg.com/202308/18/64df5f4c49bec2215.png_orig.jpg"
+  - "https://am.zdmimg.com/202308/18/64df5f4c49bec2215.png_orig.jpg"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
