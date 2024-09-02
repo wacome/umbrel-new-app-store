@@ -18,16 +18,4 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
       - ${APP_DATA_DIR}/data/playlist:/playlist
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
-    ports:
-      - "3483:3483/tcp"
-      - "3483:3483/udp"
-      - "9100:9100/tcp"
-      - "9003:9003/udp"
-      - "9003:9003/tcp"
-      - "9004:9004/tcp"
-      - "9004:9004/udp"
-      - "9090:9090/tcp"
-      - "9000:9000/tcp"
-      - "43210:43210/tcp"
-      - "43210:43210/udp"
-      - "8088:8088/tcp"
+    network_mode: host
