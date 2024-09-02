@@ -8,17 +8,21 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: ddg5366/roonserver:latest
+    image: toycon/roon:latest
     restart: always
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
     volumes:
-      - ${APP_DATA_DIR}/data/:/var/roon/RoonServer
+      - ${APP_DATA_DIR}/data/:/var/roon
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
-    ports:
-      - 55000:55000/tcp
-      - 9330-9339:9330-9339/tcp
-      - 30000-30009:30000-30009/tcp
-      - 9003:9003/udp
+    network_mode: host
+    devices:
+      - /dev/snd:/dev/snd
+    cap_add:
+      - SYS_NICE
+    ulimits:
+      nofile:
+        soft: 8192
+        hard: 8192
