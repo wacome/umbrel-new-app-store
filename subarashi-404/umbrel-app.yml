@@ -1,7 +1,7 @@
 manifestVersion: 1
-id: subarashi-404page
+id: subarashi-404
 category: Development
-name: 404page
+name: 404
 version: "1.0.0"
 icon: https://cdn-icons-png.flaticon.com/512/4542/4542759.png
 tagline: 404
