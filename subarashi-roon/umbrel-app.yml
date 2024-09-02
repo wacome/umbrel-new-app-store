@@ -14,7 +14,7 @@ website: http://www.erji.net/forum.php?mod=viewthread&tid=2247160
 dependencies: []
 repo: https://github.com/alist-org/alist
 support: https://github.com/alist-org/alist/discussions
-port: 8099
+port: 8200
 gallery: 
   - "https://am.zdmimg.com/202308/18/64df5f4c49bec2215.png_orig.jpg"
   - "https://am.zdmimg.com/202308/18/64df5f4c49bec2215.png_orig.jpg"
