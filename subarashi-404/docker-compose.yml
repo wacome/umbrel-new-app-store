@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-404_server_1
+      APP_PORT: 8099
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: toycon/404:latest
+    restart: always
