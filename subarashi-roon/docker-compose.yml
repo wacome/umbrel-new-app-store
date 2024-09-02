@@ -14,6 +14,8 @@ services:
       - PUID=1000
       - PGID=1000
     volumes:
-      - ${APP_DATA_DIR}/data/RoonServer:/var/roon/RoonServer
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
+      - type: bind
+        source: ${APP_DATA_DIR}/data/RoonServer
+        target: /var/roon/RoonServer
     network_mode: host
