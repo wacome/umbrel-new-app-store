@@ -19,3 +19,18 @@ services:
       - ${APP_DATA_DIR}/data/playlist:/playlist
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music
     network_mode: host
+    extra_hosts:
+      - "bits.roonlabs.net:127.0.0.1"
+      - "discovery.roonlabs.net:127.0.0.1"
+      - "devicedb.roonlabs.net:127.0.0.1"
+      - "updates.roonlabs.com:127.0.0.1"
+      - "accounts5.roonlabs.com:127.0.0.1"
+      - "metadataserver.roonlabs.net:127.0.0.1"
+      - "download.roonlabs.com:127.0.0.1"
+      - "prop5.roonlabs.com:127.0.0.1"
+      - "push.roonlabs.com:127.0.0.1"
+      - "devicedb.roonlabs.com:127.0.0.1"
+      - "discover.roonlabs.net:127.0.0.1"
+      - "messaging.roonlabs.net:127.0.0.1"
+      - "geoip.roonlabs.net:127.0.0.1"
+      - "graph.facebook.com:127.0.0.1"
