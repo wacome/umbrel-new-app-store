@@ -9,7 +9,6 @@ services:
 
   server:
     image: suwey/streamer:latest
-    command: ["1", "1", "1", "1", "8080"]
     restart: always
     environment:
       - PUID=1000
