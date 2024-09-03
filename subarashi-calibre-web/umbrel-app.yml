@@ -3,6 +3,7 @@ id: subarashi-calibre-web
 category: files
 name: Calibre Web
 version: "0.6.23"
+icon: https://th.bing.com/th/id/OIP.-BXhh_cThZPmdQG_J814xgHaHa?rs=1&pid=ImgDetMain
 tagline: A clean web app for your eBooks
 description: >-
   Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
