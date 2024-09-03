@@ -13,5 +13,9 @@ services:
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads/books:/books
       - ${APP_DATA_DIR}/index:/index
-    working_dir: /index
-    command: index -f *.csv
+    command: 
+      - sh
+      - -c
+      - |
+        /book-searcher index -f /index/*.csv
+        exec /book-searcher run -b 0.0.0.0:7070
