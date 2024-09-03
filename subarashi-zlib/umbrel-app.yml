@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-zlib
+category: Development
+name: Z-Library
+version: "1.0.0"
+icon: https://th.bing.com/th/id/OIP.mHB-ncICh8wn-Zum1UQGUgAAAA?rs=1&pid=ImgDetMain
+tagline: zlib
+description: >-
+  Z-Library is a library management system that allows you to manage your books, music, movies, and other files.
+releaseNotes: >-
+  1. add web UI
+developer: maxduke
+website: https://alist.nn.ci/zh/
+dependencies: []
+repo: https://github.com/alist-org/alist
+support: https://github.com/alist-org/alist/discussions
+port: 7070
+gallery: 
+  - "https://th.bing.com/th/id/OIP.PCh7uupVnXOYXP-JzigGrQAAAA?rs=1&pid=ImgDetMain"
+  - "https://th.bing.com/th/id/OIP.PCh7uupVnXOYXP-JzigGrQAAAA?rs=1&pid=ImgDetMain"
+  - "https://th.bing.com/th/id/OIP.PCh7uupVnXOYXP-JzigGrQAAAA?rs=1&pid=ImgDetMain"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
