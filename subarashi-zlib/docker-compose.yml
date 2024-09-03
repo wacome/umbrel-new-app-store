@@ -12,3 +12,4 @@ services:
     restart: always
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads/books:/books
+      - ${APP_DATA_DIR}/index:/index
