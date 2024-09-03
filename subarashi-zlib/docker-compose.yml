@@ -15,5 +15,5 @@ services:
       - ${APP_DATA_DIR}/index:/index
     working_dir: /index
     command: >
-      sh -c "/book-searcher index -f /index/*.csv && 
+      sh -c "/book-searcher index -f /index/rawdata.csv && 
              /book-searcher run -b 0.0.0.0:7070"
