@@ -8,12 +8,8 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: maxduke/book-searcher:latest
+    image: dejavumoe/book-searcher:latest
     restart: always
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads/books:/books
       - ${APP_DATA_DIR}/index:/index
-    working_dir: /index
-    command: >
-      sh -c "/book-searcher index -f /index/rawdata.csv && 
-             /book-searcher run -b 0.0.0.0:7070"
