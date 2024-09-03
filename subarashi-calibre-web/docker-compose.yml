@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-calibre-web_server_1
+      APP_PORT: 8083
+      PROXY_AUTH_ADD: "false"
+      
+  server:
+    image: linuxserver/calibre-web:0.6.23
+    stop_grace_period: 1m
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads/books:/books
+    restart: on-failure
