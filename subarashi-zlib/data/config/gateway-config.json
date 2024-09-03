@@ -1,0 +1,16 @@
+[
+    "https://ipfs.io/ipfs/:hash",
+	"https://flk-ipfs.io/ipfs/:hash",
+    "https://ipfs.cyou/ipfs/:hash",
+    "https://dwt.my.id/ipfs/:hash",
+    "https://hardbin.com/ipfs/:hash",
+    "https://gateway.ipfs.io/ipfs/:hash",
+    "https://gateway.pinata.cloud/ipfs/:hash",
+    "https://dweb.link/ipfs/:hash",
+    "https://dlunar.net/ipfs/:hash",
+    "https://4everland.io/ipfs/:hash",
+    "https://ipfs.runfission.com/ipfs/:hash",
+    "https://nftstorage.link/ipfs/:hash",
+    "https://w3s.link/ipfs/:hash",
+    "https://trustless-gateway.link/ipfs/:hash"
+]
