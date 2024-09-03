@@ -10,3 +10,5 @@ services:
   server:
     image: maxduke/book-searcher:latest
     restart: always
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/downloads/books:/books
