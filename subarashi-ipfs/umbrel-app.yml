@@ -14,7 +14,7 @@ website: https://alist.nn.ci/zh/
 dependencies: []
 repo: https://github.com/alist-org/alist
 support: https://github.com/alist-org/alist/discussions
-port: 5244
+port: 5001
 gallery: 
   - "https://zu1k.com/posts/tutorials/p2p/ipfs-easy-use/ipfs-logo.png"
   - "https://zu1k.com/posts/tutorials/p2p/ipfs-easy-use/ipfs-logo.png"
