@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: subarashi-ipfs_server_1
+      APP_PORT: 5001
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: ipfs/go-ipfs:latest
+    restart: always
+    user: "1000:1000"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data/ipfs
+    ports:
+      - "4001:4001/tcp"
+      - "4001:4001/udp"
+      - "8086:8080"

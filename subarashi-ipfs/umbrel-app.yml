@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: subarashi-ipfs
+category: Development
+name: IPFS
+version: "1.0.0"
+icon: https://th.bing.com/th/id/R.12ee0974c0178a8287371a6ecae6fa71?rik=jGw8pVIPFb9HGg&riu=http%3a%2f%2fwiki.hash.kr%2fimages%2fthumb%2fa%2fad%2fIPFS_%eb%a1%9c%ea%b3%a0.png%2f200px-IPFS_%eb%a1%9c%ea%b3%a0.png&ehk=rPc8YAiZAvShXFG7OQOaXBtWrvYuQfojDZ%2fDsNigkWc%3d&risl=&pid=ImgRaw&r=0
+tagline: IPFS
+description: >-
+  IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open. It enables the creation of distributed, versioned, and permanent web applications.
+releaseNotes: >-
+  1. add web UI
+developer: toycon
+website: https://alist.nn.ci/zh/
+dependencies: []
+repo: https://github.com/alist-org/alist
+support: https://github.com/alist-org/alist/discussions
+port: 5244
+gallery: 
+  - "https://zu1k.com/posts/tutorials/p2p/ipfs-easy-use/ipfs-logo.png"
+  - "https://zu1k.com/posts/tutorials/p2p/ipfs-easy-use/ipfs-logo.png"
+  - "https://zu1k.com/posts/tutorials/p2p/ipfs-easy-use/ipfs-logo.png"
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-new-app-store
